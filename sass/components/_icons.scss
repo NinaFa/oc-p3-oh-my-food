@@ -1,0 +1,18 @@
+
+.icon {
+    &__default {
+        color: $icon-default;
+    }
+    &__filter {
+        color: $text-default;
+    }
+    &__fonctionnement {
+        color: $text-light;
+        &:hover {
+        color: $primary;
+        }
+    }
+    &__footer {
+        color: $text-alt;
+    }
+}

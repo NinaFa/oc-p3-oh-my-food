@@ -1,0 +1,43 @@
+
+// Colors
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$secondary-2 : #FF0000;
+$tertiary: #99E2D0;
+
+$bg-color-default: #fbfbfb;
+$bg-color-alt: white;
+$bg-color-dark: rgb(35, 35, 35);
+
+$text-default: black;
+$text-alt: white;
+$text-light: grey;
+
+$icon-default: $bg-color-dark;
+
+$palette-bg : (
+    bg-default: $bg-color-default,
+    bg-alt: $bg-color-alt,
+    bg-dark: $bg-color-dark
+);
+
+$palette-card: (
+    bg: $bg-color-alt,
+    bg-validated: $tertiary,
+    text: $text-default,
+    label: $tertiary
+);
+
+$palette-btn: (
+    color-gradient-1: $primary,
+    color-gradient-2: $secondary,
+    text: $text-alt
+);
+
+$palette-footer: (
+    text: $text-alt,
+    bg: $bg-color-dark
+);
+
+// Fonts

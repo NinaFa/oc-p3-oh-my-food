@@ -1,0 +1,17 @@
+
+.btn {
+    &--default {
+    @include gradient-default;
+    height: 3rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    color: $text-alt;
+    margin: 1.5rem auto;
+    transition: ease-in-out 200ms;
+    &:hover {
+        @include shadow-default;
+        filter: brightness(107%);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "Oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:css"
+  },
+  "keywords": [
+    "Projet3"
+  ],
+  "author": "Nina Farge",
+  "license": "ISC"
+}

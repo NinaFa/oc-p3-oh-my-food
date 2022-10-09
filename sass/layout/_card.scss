@@ -1,0 +1,95 @@
+
+// RESTAURANT CARDS
+
+.card {
+    height: 200px;
+    width: 95%;
+    border-radius: 20px;
+    transition: ease-in-out 200ms;
+    background: $bg-color-alt;
+    @include shadow-default;
+    margin: 1rem auto;
+    position: relative;
+        > a {
+        display: block;
+        width: auto;
+        height: auto;
+        }
+        &__img {
+            object-fit: cover;
+            height: 150px;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        &:hover {
+            transform: scale(1.015);
+        }
+}
+
+.card-description {
+    padding: 0.7rem 1rem;
+    text-align: start;
+        > a {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__fav {
+            transition: ease-in-out 200ms;
+            &:hover {
+                @include gradient-default;
+                background-clip: text;
+            }
+        }
+    }
+
+.card-label {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    padding: 0.5rem;
+    background-color: map-get($palette-card, label);
+        &__text {
+            color: lightness-shift($tertiary);
+            font-weight: bold;
+            text-align: center;
+        }
+}
+
+// LIST CARDS
+
+.list-fonct-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: lighten($bg-color-dark,80%);
+    padding: 1rem;
+    transition: ease-in-out 400ms;
+    border-radius: 1rem;
+    border: none;
+    width: 90%;
+    margin-left: 5px;
+    @include shadow-default;
+    font-weight: 400;
+        &:hover {
+            background-color: lighten($primary, 30%);
+            color: $primary;
+        }
+    > span {
+        background-color: $primary;
+        border-radius: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: -2rem;
+        color: $text-alt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > p {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+        }
+}
+

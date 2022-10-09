@@ -1,0 +1,38 @@
+
+.section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: lightness-shift($bg-color-dark);
+    &--bg-alt {
+        background-color: map-get($palette-bg, bg-alt);
+        row-gap: 1rem;
+    }
+    &--bg-dark {
+        background-color: map-get($palette-bg, bg-alt);
+    }
+    &__container {
+        display: flex;
+        &--loc {
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: darken($bg-color-default,  10%);
+        }
+        &--fonct {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            width: 95%;
+        }
+        &--col {
+            flex-flow: column wrap;
+            width: 100%;
+        }
+    }
+}
+
