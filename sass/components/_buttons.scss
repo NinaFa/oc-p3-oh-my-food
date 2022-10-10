@@ -3,6 +3,7 @@
     &--default {
     @include gradient-default;
     height: 3rem;
+    min-width: 10rem;
     border-radius: 2rem;
     padding: 1rem;
     border: none;
@@ -13,5 +14,8 @@
         @include shadow-default;
         filter: brightness(107%);
         }
+    }
+    &--order {
+        margin: 0 auto 2rem auto;
     }
 }

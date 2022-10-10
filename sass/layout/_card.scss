@@ -24,6 +24,11 @@
         &:hover {
             transform: scale(1.015);
         }
+        &--menu {
+            height: 50px;
+            width: 100%;
+            border-radius: 10px;
+        }
 }
 
 .card-description {
@@ -34,6 +39,9 @@
             flex-flow: row;
             justify-content: space-between;
             align-items: center;
+            > p {
+                font-weight: bold;
+            }
         }
         &__fav {
             transition: ease-in-out 200ms;
@@ -41,6 +49,9 @@
                 @include gradient-default;
                 background-clip: text;
             }
+        }
+        &--menu {
+            padding: 1rem 1rem;
         }
     }
 
@@ -63,12 +74,12 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-    background-color: lighten($bg-color-dark,80%);
+    background-color: lighten($bg-color-dark,82%);
     padding: 1rem;
     transition: ease-in-out 400ms;
     border-radius: 1rem;
     border: none;
-    width: 90%;
+    width: 92%;
     margin-left: 5px;
     @include shadow-default;
     font-weight: 400;
