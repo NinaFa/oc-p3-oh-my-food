@@ -19,12 +19,6 @@
 .icon__filter {
   color: black;
 }
-.icon__fonctionnement {
-  color: grey;
-}
-.icon__fonctionnement:hover {
-  color: #9356DC;
-}
 .icon__footer {
   color: white;
 }
