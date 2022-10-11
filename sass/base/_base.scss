@@ -33,9 +33,18 @@ h4 {
     color: $text-light;
     font-weight: 100;
     text-align: start;
-    padding-bottom: 0.4rem;
-    border-bottom: 2px solid $tertiary;    margin: 2rem auto 1rem auto;
+    padding-bottom: 0.5rem;   
+    margin: 2rem auto 1rem auto;
     position: relative;
+    &::after {
+        content: "";
+        border-bottom: 2px solid $tertiary;
+        position: absolute;
+        padding-bottom: 1rem;   
+        left: 0px;
+        width: 2rem;
+        height: 2px;
+    }
 }
 
 h5 {
