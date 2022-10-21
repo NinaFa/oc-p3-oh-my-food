@@ -3,32 +3,24 @@
 
 .card {
     height: 200px;
-    width: 95%;
+    width: 100%;
     border-radius: 20px;
-    transition: ease-in-out 200ms;
     background: $bg-color-alt;
     @include shadow-default;
-    margin: 1rem auto;
+    margin: 15px auto;
     position: relative;
-        > a {
+    transition: ease-in-out 2s;
+    > a {
         display: block;
         width: auto;
         height: auto;
-        }
-        &__img {
-            object-fit: cover;
-            height: 150px;
-            width: 100%;
-            border-radius: 20px 20px 0 0;
-        }
-        &:hover {
-            transform: scale(1.015);
-        }
-        &--menu {
-            height: 50px;
-            width: 100%;
-            border-radius: 10px;
-        }
+    }
+    &__img {
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
 }
 
 .card-description {
@@ -41,17 +33,64 @@
             align-items: center;
             > p {
                 font-weight: bold;
+                align-self: center;
             }
+        }
+        &__text {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
         }
         &__fav {
-            transition: ease-in-out 200ms;
-            &:hover {
+            transition: ease-in-out 500ms;
+            position: relative;
+            > i {
+                &.fa-heart {
+                opacity: 1;
+                z-index: 1;
+                font-size: 1rem;
+                transition: ease-in-out 500ms;
+                }
+            }
+            &::after {
+                content: '\f004';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                position: absolute;
+                font-size: 1rem;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                z-index: 0;
                 @include gradient-default;
                 background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: 
+                    transform cubic-bezier(.50,.30,0.80,1.5) 500ms,
+                    opacity ease-out 200ms;
+                transform: scale(0%);
+                }  
+            &:hover {
+                > i.fa-heart {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 1;
+                    transform: scale(110%);
+                    transform-origin: bottom;
+                }
             }
-        }
-        &--menu {
-            padding: 1rem 1rem;
+            &.heading {
+                > i {
+                font-size: 18px;
+                }
+                &::after {
+                    font-size: 18px;
+                }
+            }
         }
     }
 
@@ -72,21 +111,17 @@
 .list-fonct-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 15px;
+    margin-bottom: 15px;
     background-color: lighten($bg-color-dark,82%);
     padding: 1rem;
-    transition: ease-in-out 400ms;
+    transition: ease-in-out 350ms;
     border-radius: 1rem;
     border: none;
     width: 92%;
     margin-left: 5px;
     @include shadow-default;
     font-weight: 400;
-        &:hover {
-            background-color: lighten($primary, 30%);
-            color: $primary;
-        }
     > span {
         background-color: $primary;
         border-radius: 100%;
@@ -102,19 +137,127 @@
             font-weight: 400;
         }
         }
+    > i {
+        color: grey;
+    }
+    &:hover {
+        background-color: lighten($primary, 30%);
+        > i {
+            color : $primary;
+        }
+}
 }
 
 
-// MENU
+// MENU CARDS
+
+.card--menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // position: relative;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background: $bg-color-alt;
+    @include shadow-default;
+    margin: 10px auto;
+    animation: progressive-translate ease-in-out 1s;
+    &:hover {
+        & .toggle {
+            margin-right: 0px;
+            transform-origin: right;
+         > .add-to-cart > i {
+            transform: rotate(1turn);
+        }
+        }
+        }
+        // > .card-description--menu > p {
+        //     text-overflow: ellipsis;
+        //     overflow: hidden;
+        //     min-width: 0px;
+        // }
+        // > .card-description--menu > h2 {
+        //     text-overflow: ellipsis;
+        //     overflow: hidden;
+        //     min-width: 0px;
+        // }
+        // }
+    &:first-child {
+        animation-delay: 0ms;
+    }
+    &:nth-child(2) {
+        animation-delay: 150ms;
+    }
+    &:nth-child(3) {
+        animation-delay: 300ms;
+    }
+}
+
+.card-description--menu {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    line-height: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    > h2, p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    // &::after {
+    //     content: "";
+    //     transition: ease-in-out 2s;
+    //     transform-origin: top right;
+    // }
+    // &:hover {
+    //     &::after {
+    //     content: '\f004';
+    //     font-family: "Font Awesome 5 Free";
+    //     font-weight: 900;
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     display: grid;
+    //     place-items: center;
+    //     width: 80px;
+    //     height: auto;
+    //     background-color: $tertiary;
+    //     transform-origin: top right;
+    //     animation: translateX;
+    //     > i {
+    //         color: white;
+    //         font-size: 16px;
+    //         transition : all 0.8s 0.5s ease-in-out;
+    //     }
+    //     }
+    // }
+}
+
+.toggle {
+    display: flex;
+    flex: 0 0 auto;
+    margin-right: -80px;
+    transition: all 0.8s ease-in-out;
+    > p {
+        font-weight: bold;
+        padding: 0.75rem 1rem 0.75rem 0;
+        align-self: end;
+    }
+}
 
 .add-to-cart {
-    width: 0px;
-    height: 0px;
-    transition: 400ms ease-in-out;
-    &:hover {
-    width: 50px;
-    height: 100%;
-    background-color: lighten($tertiary, 20%);
-    color: $tertiary;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: auto;
+    background-color: $tertiary;
+    > i {
+        color: white;
+        font-size: 1.3rem;
+        transition : all 0.6s 0.2s ease-in-out;
     }
 }

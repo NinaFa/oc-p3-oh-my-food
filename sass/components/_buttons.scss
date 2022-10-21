@@ -2,6 +2,7 @@
 .btn {
     &--default {
     @include gradient-default;
+    @include shadow-default;
     height: 3rem;
     min-width: 10rem;
     border-radius: 2rem;
@@ -9,12 +10,30 @@
     border: none;
     color: $text-alt;
     margin: 1.5rem auto;
-    transition: ease-in-out 200ms;
+    transition: ease-in-out 250ms;
+    position: relative;
+    z-index: 1;
     &:hover {
-        @include shadow-default;
-        filter: brightness(107%);
+        // @include shadow-default;
+        // filter: brightness(107%);
+        &::after {
+            opacity: 1;
         }
     }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @include gradient-hover;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        border-radius: 2rem;
+    }
+}
     &--order {
         margin: 0 auto 2rem auto;
     }

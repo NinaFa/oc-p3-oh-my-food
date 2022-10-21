@@ -1,7 +1,11 @@
 
 //GRADIENT
 @mixin gradient-default {
-    background-image: linear-gradient(358deg, $primary, $secondary);
+    background: linear-gradient(358deg, $primary, $secondary);
+}
+
+@mixin gradient-hover {
+    background: linear-gradient(358deg, lighten($primary, 5%), lighten($secondary, 5%));
 }
 
 //SHADOW

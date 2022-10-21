@@ -6,3 +6,45 @@
         @return darken($color, 40%);;
     }
     }
+
+@keyframes progressive-opacity {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes progressive-opacity2 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes progressive-translate {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes translateX {
+    from {
+        transform: translateX(80px);
+        transform-origin: right;
+    }
+    to {
+        transform: translateX(0);
+        transform-origin: right;
+    }
+}

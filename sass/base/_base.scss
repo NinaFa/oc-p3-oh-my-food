@@ -16,6 +16,7 @@ main > img {
 h1 {
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -67,7 +68,20 @@ p {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    > i {
+    & i {
         font-size: 20px;
+    }
+}
+
+input {
+    font-family: Roboto, sans-serif;
+    background: none;
+    color: grey;
+    border: none;
+    width: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    &::placeholder {
+        color: $text-light;
     }
 }

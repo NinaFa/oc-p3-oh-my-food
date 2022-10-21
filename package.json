@@ -4,11 +4,13 @@
   "description": "Oh my food",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass:css"
+    "sass": "sass --watch sass:css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "keywords": [
     "Projet3"
   ],
   "author": "Nina Farge",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

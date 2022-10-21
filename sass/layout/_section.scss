@@ -4,8 +4,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 1.5rem;
+    padding: 2rem 1rem 2.5rem 1rem;
     background-color: lightness-shift($bg-color-dark);
     &--bg-alt {
         background-color: map-get($palette-bg, bg-alt);
@@ -30,15 +29,14 @@
             width: 95%;
         }
         &--col {
-            flex-flow: column wrap;
-            width: 100%;
+            flex-flow: column;
+            width: 95%;
         }
     }
     &--menu {
         border-radius: 2.5rem 2.5rem 0 0;
         margin-top: -2.5rem;
         position: relative;
-        width: 90%;
     }
 }
 

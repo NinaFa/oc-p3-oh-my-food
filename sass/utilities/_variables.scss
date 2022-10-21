@@ -12,7 +12,7 @@ $bg-color-dark: rgb(35, 35, 35);
 
 $text-default: black;
 $text-alt: white;
-$text-light: grey;
+$text-light: darken($bg-color-default, 60%);
 
 $icon-default: $bg-color-dark;
 
