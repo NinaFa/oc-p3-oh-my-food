@@ -169,14 +169,6 @@
             color : $primary;
         }
     }
-    @include mobile {
-        &:active {
-            background-color: lighten($primary, 30%);
-            > i {
-                color : $primary;
-            }
-        }
-    }
 }
 
 
@@ -206,7 +198,7 @@
     background: $bg-color-alt;
     @include shadow-default;
     margin: 10px auto;
-    animation: progressive-translate ease-in-out 1s;
+    animation: progressive-translate ease-in-out 1s both;
     &:hover {
         & .toggle {
             margin-right: 0px;
