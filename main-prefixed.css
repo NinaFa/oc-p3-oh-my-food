@@ -667,11 +667,11 @@
 .list-fonct-item:hover > i {
   color: #9356DC;
 }
-@media screen and (max-width: ) {
-  .list-fonct-item:focus {
+@media screen and (max-width: 768px) {
+  .list-fonct-item:active {
     background-color: #e4d5f6;
   }
-  .list-fonct-item:focus > i {
+  .list-fonct-item:active > i {
     color: #9356DC;
   }
 }

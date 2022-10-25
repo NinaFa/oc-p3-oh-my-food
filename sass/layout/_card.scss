@@ -170,7 +170,7 @@
         }
     }
     @include mobile {
-        &:focus {
+        &:active {
             background-color: lighten($primary, 30%);
             > i {
                 color : $primary;
