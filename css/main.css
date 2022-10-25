@@ -301,7 +301,7 @@
 }
 .card__img {
   object-fit: cover;
-  height: 150px;
+  height: 148px;
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
@@ -319,7 +319,7 @@
 }
 
 .card-description {
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 1rem;
   text-align: start;
 }
 .card-description > a {
@@ -336,6 +336,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  line-height: 1.2rem;
 }
 .card-description__fav {
   transition: ease-in-out 500ms;
@@ -576,14 +577,29 @@ h1 {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+}
 
 h2 {
   font-size: 12px;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 14px;
+  }
+}
 
 h3 {
   font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 14px;
+  }
 }
 
 h4 {
@@ -611,10 +627,20 @@ h5 {
   font-size: 24px;
   margin-right: 2rem;
 }
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 26px;
+  }
+}
 
 p {
   font-size: 12px;
   font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
 }
 
 .light {
@@ -631,18 +657,28 @@ p {
 .menu__heading i {
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  .menu__heading i {
+    font-size: 22px;
+  }
+}
 
 input {
   font-family: Roboto, sans-serif;
   background: none;
   color: grey;
   border: none;
-  width: 100px;
+  width: 120px;
   font-size: 12px;
   font-weight: 600;
 }
 input::placeholder {
   color: #626262;
+}
+@media screen and (max-width: 768px) {
+  input {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
