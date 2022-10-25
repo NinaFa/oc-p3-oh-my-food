@@ -27,13 +27,26 @@
     background-color: map-get($palette-bg, bg-dark);
     color: $text-alt;
     padding: 1rem;
+    @include tablet-desktop {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
     > img {
         width: 6rem;
         filter:invert(100%);
         padding: 0.5rem 0 1.5rem 0;
+        @include tablet-desktop {
+            padding: 0;
+        }
     }
     > * {
         padding-bottom: 0.5rem;
+        @include tablet-desktop {
+            padding-bottom: 0;
+        }
     }
     & i {
         font-size: 1rem;

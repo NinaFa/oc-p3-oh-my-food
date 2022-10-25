@@ -27,10 +27,26 @@
             flex-flow: column wrap;
             align-content: center;
             width: 95%;
+            @include tablet-desktop {
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 2rem;
+                & h1 {
+                    width: 100%;
+                }
+            }
         }
         &--col {
+            display: flex;
             flex-flow: column;
             width: 95%;
+            @include tablet-desktop {
+                flex-flow: row wrap;
+                justify-content: center;
+                & h1 {
+                    width: 100%;
+                }
+            }
         }
     }
     &--menu {

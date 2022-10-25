@@ -14,8 +14,6 @@
     position: relative;
     z-index: 1;
     &:hover {
-        // @include shadow-default;
-        // filter: brightness(107%);
         &::after {
             opacity: 1;
         }

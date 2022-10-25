@@ -1,5 +1,8 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 body {
-    max-width: 430px;
     width: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -17,6 +20,9 @@ h1 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 1.5rem;
+    @include tablet-desktop {
+        text-align: center;
+    }
 }
 
 h2 {

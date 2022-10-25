@@ -1,4 +1,13 @@
 
+// Breakpoints
+
+$breakpoints : (
+    mobile-max: 768px,
+    tablet-min: 769px,
+    tablet-max: 991px,
+    desktop-min: 992px,
+);
+
 // Colors
 
 $primary: #9356DC;
@@ -39,5 +48,3 @@ $palette-footer: (
     text: $text-alt,
     bg: $bg-color-dark
 );
-
-// Fonts
