@@ -168,7 +168,15 @@
         > i {
             color : $primary;
         }
-}
+    }
+    @include mobile {
+        &:focus {
+            background-color: lighten($primary, 30%);
+            > i {
+                color : $primary;
+            }
+        }
+    }
 }
 
 
