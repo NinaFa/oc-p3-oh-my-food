@@ -34,13 +34,14 @@
         gap: 2rem;
         padding: 2rem;
     }
-    > img {
+    > a {
+        @include mobile {
+            padding: 0.5rem 0 1.5rem 0;
+        }
+    }
+    & img {
         width: 6rem;
         filter:invert(100%);
-        padding: 0.5rem 0 1.5rem 0;
-        @include tablet-desktop {
-            padding: 0;
-        }
     }
     > * {
         padding-bottom: 0.5rem;

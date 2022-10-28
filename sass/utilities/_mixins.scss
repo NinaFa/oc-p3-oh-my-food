@@ -6,7 +6,7 @@
     }
 }
     
-    @mixin tablet {
+@mixin tablet {
     @media screen and (min-width: (map-get($breakpoints, tablet-min))) and (max-width: (map-get($breakpoints, tablet-max))) {
         @content;
     }
@@ -18,7 +18,7 @@
     }
 }
     
-    @mixin desktop {
+@mixin desktop {
     @media screen and (min-width: (map-get($breakpoints, desktop-min))) {
         @content;
     }
@@ -31,7 +31,7 @@
 }
 
 @mixin gradient-hover {
-    background: linear-gradient(358deg, lighten($primary, 5%), lighten($secondary, 5%));
+    background: linear-gradient(358deg, lighten($primary, 5.5%), lighten($secondary, 5.5%));
 }
 
 //SHADOWS
@@ -40,22 +40,10 @@
     box-shadow: 1px 2px 10px rgb(180, 180, 180);
 }
 
+@mixin shadow-default-hover {
+    box-shadow: 2px 2px 10px rgb(170, 170, 170);
+}
+
 @mixin shadow-header {
     box-shadow: 0px 3px 6px rgb(180, 180, 180);
-}
-
-// PADDING
-
-@mixin card-padding {
-    padding: 5px 10px 5px 5px;
-}
-
-@mixin section-padding {
-    padding: 20px 10px;
-}
-
-// MARGIN
-
-@mixin card-item-margin {
-    margin: 0 10px;
 }

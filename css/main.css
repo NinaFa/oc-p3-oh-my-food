@@ -50,6 +50,7 @@
 }
 .btn--default:hover::after {
   opacity: 1;
+  cursor: pointer;
 }
 .btn--default::after {
   content: "";
@@ -58,11 +59,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(358deg, #a16be0, #ff93e1);
+  background: linear-gradient(358deg, #a26de1, #ff95e2);
+  box-shadow: 2px 2px 10px rgb(170, 170, 170);
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
   border-radius: 2rem;
+  cursor: pointer;
 }
 .btn--order {
   margin: 0 auto 2rem auto;
@@ -194,15 +197,14 @@
     padding: 2rem;
   }
 }
-.footer > img {
+@media screen and (max-width: 768px) {
+  .footer > a {
+    padding: 0.5rem 0 1.5rem 0;
+  }
+}
+.footer img {
   width: 6rem;
   filter: invert(100%);
-  padding: 0.5rem 0 1.5rem 0;
-}
-@media screen and (min-width: 769px) {
-  .footer > img {
-    padding: 0;
-  }
 }
 .footer > * {
   padding-bottom: 0.5rem;
@@ -238,10 +240,8 @@
 .section--bg-dark {
   background-color: white;
 }
-.section__container {
-  display: flex;
-}
 .section__container--loc {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -258,7 +258,7 @@
   .section__container--fonct {
     flex-flow: row wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .section__container--fonct h1 {
     width: 100%;
@@ -293,6 +293,7 @@
   margin: 15px auto;
   position: relative;
   transition: ease-in-out 2s;
+  cursor: pointer;
 }
 .card > a {
   display: block;
@@ -319,8 +320,10 @@
 }
 
 .card-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
-  text-align: start;
 }
 .card-description > a {
   display: flex;
@@ -345,41 +348,43 @@
 .card-description__fav > i.fa-heart {
   opacity: 1;
   z-index: 1;
-  font-size: 1rem;
+  font-size: 1.25rem;
   transition: ease-in-out 500ms;
+  cursor: pointer;
 }
 .card-description__fav::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.25rem;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   opacity: 0;
   z-index: 0;
+  cursor: pointer;
   background: linear-gradient(358deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform cubic-bezier(0.5, 0.3, 0.7, 1.5) 500ms, opacity ease-out 200ms;
-  transform: scale(0%);
+  transform: scale(0);
 }
 .card-description__fav:hover > i.fa-heart {
   opacity: 0;
 }
 .card-description__fav:hover::after {
   opacity: 1;
-  transform: scale(100%);
+  transform: scale(1);
   transform-origin: bottom;
 }
 .card-description__fav.heading > i {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 .card-description__fav.heading::after {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 .card-label {
@@ -429,7 +434,7 @@
     width: 50%;
   }
 }
-.list-fonct-item > span {
+.list-fonct-item > div {
   background-color: #9356DC;
   border-radius: 100%;
   width: 1.5rem;
@@ -440,7 +445,7 @@
   justify-content: center;
   align-items: center;
 }
-.list-fonct-item > span > p {
+.list-fonct-item > div > p {
   font-size: 0.8rem;
   font-weight: 400;
 }
@@ -449,6 +454,7 @@
 }
 .list-fonct-item:hover {
   background-color: #e4d5f6;
+  cursor: pointer;
 }
 .list-fonct-item:hover > i {
   color: #9356DC;
@@ -485,9 +491,11 @@
 .card--menu:hover .toggle {
   margin-right: 0px;
   transform-origin: right;
+  cursor: pointer;
 }
 .card--menu:hover .toggle > .add-to-cart > i {
   transform: rotate(1turn);
+  cursor: pointer;
 }
 .card--menu:nth-child(1) {
   animation-delay: 3s;
@@ -568,7 +576,7 @@ main > img {
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -577,14 +585,9 @@ h1 {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 18px;
-  }
-}
 
 h2 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
@@ -594,7 +597,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 13px;
 }
 @media screen and (max-width: 768px) {
   h3 {
@@ -603,7 +606,7 @@ h3 {
 }
 
 h4 {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #626262;
   font-weight: 100;
@@ -616,10 +619,10 @@ h4::after {
   content: "";
   border-bottom: 2px solid #99E2D0;
   position: absolute;
-  padding-bottom: 1rem;
+  padding-bottom: 1.25rem;
   left: 0px;
   width: 2rem;
-  height: 2px;
+  height: 3px;
 }
 
 h5 {
@@ -634,7 +637,7 @@ h5 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 200;
 }
 @media screen and (max-width: 768px) {
@@ -662,6 +665,12 @@ p {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu__heading {
+    width: 95%;
+    padding: 0 1rem;
+  }
+}
 
 input {
   font-family: Roboto, sans-serif;
@@ -669,16 +678,11 @@ input {
   color: grey;
   border: none;
   width: 120px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 input::placeholder {
   color: #626262;
-}
-@media screen and (max-width: 768px) {
-  input {
-    font-size: 14px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

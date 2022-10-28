@@ -16,6 +16,7 @@
     &:hover {
         &::after {
             opacity: 1;
+            cursor: pointer;
         }
     }
     &::after {
@@ -26,10 +27,12 @@
         bottom: 0;
         left: 0;
         @include gradient-hover;
+        @include shadow-default-hover;
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
         border-radius: 2rem;
+        cursor: pointer;
     }
 }
     &--order {

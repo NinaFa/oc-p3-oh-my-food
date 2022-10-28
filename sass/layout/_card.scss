@@ -10,6 +10,7 @@
     margin: 15px auto;
     position: relative;
     transition: ease-in-out 2s;
+    cursor: pointer;
     > a {
         display: block;
         width: auto;
@@ -32,8 +33,10 @@
 }
 
 .card-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 1rem;
-    text-align: start;
         > a {
             display: flex;
             flex-flow: row;
@@ -57,8 +60,9 @@
                 &.fa-heart {
                 opacity: 1;
                 z-index: 1;
-                font-size: 1rem;
+                font-size: 1.25rem;
                 transition: ease-in-out 500ms;
+                cursor: pointer;
                 }
             }
             &::after {
@@ -66,13 +70,14 @@
                 font-family: "Font Awesome 5 Free";
                 font-weight: 900;
                 position: absolute;
-                font-size: 1rem;
+                font-size: 1.25rem;
                 top: 0;
                 right: 0;
                 bottom: 0;
                 left: 0;
                 opacity: 0;
                 z-index: 0;
+                cursor: pointer;
                 @include gradient-default;
                 background-clip: text;
                 -webkit-background-clip: text;
@@ -80,24 +85,24 @@
                 transition: 
                     transform cubic-bezier(.50,.30,0.70,1.5) 500ms,
                     opacity ease-out 200ms;
-                transform: scale(0%);
-                }  
+                transform: scale(0);
+            }  
             &:hover {
                 > i.fa-heart {
                     opacity: 0;
                 }
                 &::after {
                     opacity: 1;
-                    transform: scale(100%);
+                    transform: scale(1);
                     transform-origin: bottom;
                 }
             }
             &.heading {
                 > i {
-                font-size: 18px;
+                font-size: 1.5rem;
                 }
                 &::after {
-                    font-size: 18px;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -146,7 +151,7 @@
     @include tablet {
         width: 50%;
     }
-    > span {
+    > div {
         background-color: $primary;
         border-radius: 100%;
         width: 1.5rem;
@@ -160,12 +165,13 @@
             font-size: 0.8rem;
             font-weight: 400;
         }
-        }
+    }
     > i {
         color: grey;
     }
     &:hover {
         background-color: lighten($primary, 30%);
+        cursor: pointer;
         > i {
             color : $primary;
         }
@@ -204,8 +210,10 @@
         & .toggle {
             margin-right: 0px;
             transform-origin: right;
+            cursor: pointer;
          > .add-to-cart > i {
             transform: rotate(1turn);
+            cursor: pointer;
             }
         }
     }

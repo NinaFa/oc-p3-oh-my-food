@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oh my food! - Accueil</title>
         <link rel="stylesheet" type="text/css" href="./normalize.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;900&family=Shrikhand&display=swap" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./main-prefixed.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;900&family=Shrikhand&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="./css/prefixed/main.css">
     </head>
 
 <body>
@@ -21,7 +21,7 @@
             <span class="spinner"></span>
             <span class="spinner"></span>
         </div>
-        </div>
+    </div>
     
     <!--HEADER-->
 
@@ -30,6 +30,7 @@
         <img id="logo" class="header__logo" src="./images/logo/ohmyfood.png" alt="Oh my food!">
     </a></header>
 
+    <!--MAIN-->
     <main>
         <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
 
@@ -45,63 +46,63 @@
 
         <!--ENTRÉES-->
 
-            <ul class="menu--items">
+        <div class="menu--items">
             
             <h4>Entrées</h4>
             
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Ravioles de foie gras</h2>
                     <p>Accompagnés de leur crème à la truffe</p>
                 </div>
                 <div class="toggle">
-                <p>25€</p>
-                <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                    <p>25€</p>
+                    <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Caviar osciètre</h2>
                     <p>Sur blini à la farine de blé noir</p>
                 </div>
                 <div class="toggle">
-                <p>35€</p>
-                <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                    <p>35€</p>
+                    <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Homard et espuma de potiron</h2>
                     <p>Mariné aux zestes d'orange</p>
                 </div>
                 <div class="toggle">
-                <p>20€</p>
-                <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                    <p>20€</p>
+                    <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Foie gras de canard cuit entier</h2>
                     <p>Confiture de figue et pain toasté</p>
                 </div>
                 <div class="toggle">
-                <p>35€</p>
-                <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                    <p>35€</p>
+                    <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            </ul>
+        </div>
 
         <!--PLATS-->
 
-            <ul class="menu--items">
+        <div class="menu--items">
 
             <h4>Plats</h4>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                         <h2>Noix de coquilles Saint-Jacques</h2>
                         <p>Sur lit de purée de céleri-rave</p>
@@ -110,9 +111,9 @@
                     <p>40€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Langouste rôtie</h2>
                     <p>Purée de patate douce</p>
@@ -121,9 +122,9 @@
                     <p>35€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Mijoté de queue de boeuf</h2>
                     <p>Et riz sauvage aux zestes de citron</p>
@@ -132,17 +133,17 @@
                     <p>44€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-        </ul>
+        </div>
 
         <!--DESSERTS-->
 
-            <ul class="menu--items">
+        <div class="menu--items">
 
             <h4>Desserts</h4>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Macaron noisette et chocolat</h2>
                     <p>Glace au caramel brun et sel de Guérande</p>
@@ -151,9 +152,9 @@
                     <p>18€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Baba au rhum revisité</h2>
                     <p>Avec son coulis de citron</p>
@@ -162,9 +163,9 @@
                     <p>22€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Tarte au citron meringuée</h2>
                     <p>Déstructurée</p>
@@ -173,25 +174,28 @@
                     <p>23€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
-
-            </ul>
+            </article>
 
         </div>
+
+        </div>
+
     </section>
 
 <section class="section">
-        <button class="btn btn--default btn--order">Commander</button>
+        <button class="btn--default btn--order">Commander</button>
 </section>
 
 </main>
 
+<!--FOOTER-->
+
 <footer class="footer">
-    <img src="./images/logo/ohmyfood.png" alt="Logo Oh my food!">
-    <div class="footer__item"><i class="icon__footer fa-solid fa-utensils"></i> <p>Proposer un restaurant</p></div>
-    <div class="footer__item"><i class="icon__footer fa-solid fa-handshake-angle"></i> <p>Devenir partenaire</p></div>
-    <p>Mentions légales</p>
-    <p>Contact</p>
+    <a href="./index.html"><img src="./images/logo/ohmyfood.png" alt="Logo Oh my food!"></a>
+    <div class="footer__item"><i class="icon__footer fa-solid fa-utensils"></i> <a href="#"><p>Proposer un restaurant</p></a></div>
+    <div class="footer__item"><i class="icon__footer fa-solid fa-handshake-angle"></i> <a href="#"><p>Devenir partenaire</p></a></div>
+    <p><a href="#">Mentions légales</a></p>
+    <p><a href="mailto:#">Contact</a></p>
 </footer>
     
 </body>

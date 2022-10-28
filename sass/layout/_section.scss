@@ -14,8 +14,8 @@
         background-color: map-get($palette-bg, bg-alt);
     }
     &__container {
-        display: flex;
         &--loc {
+            display: flex;
             justify-content: center;
             align-items: center;
             gap: 1rem;
@@ -30,7 +30,7 @@
             @include tablet-desktop {
                 flex-flow: row wrap;
                 justify-content: center;
-                gap: 2rem;
+                gap: 1.5rem;
                 & h1 {
                     width: 100%;
                 }

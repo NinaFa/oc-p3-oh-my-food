@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oh my food! - Accueil</title>
         <link rel="stylesheet" type="text/css" href="./normalize.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;900&family=Shrikhand&display=swap" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./main-prefixed.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;900&family=Shrikhand&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="./css/prefixed/main.css">
     </head>
 
 <body>
@@ -21,7 +21,7 @@
             <span class="spinner"></span>
             <span class="spinner"></span>
         </div>
-        </div>
+    </div>
     
     <!--HEADER-->
 
@@ -30,8 +30,11 @@
         <img id="logo" class="header__logo" src="./images/logo/ohmyfood.png" alt="Oh my food!">
     </a></header>
 
+    <!--MAIN-->
+
     <main>
         <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+
 
     <!--RESTAURANTS-->
 
@@ -45,11 +48,11 @@
 
         <!--ENTRÉES-->
 
-            <ul class="menu--items">
+            <div class="menu--items">
             
             <h4>Entrées</h4>
             
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Tartare de poulpe acidulé</h2>
                     <p>Aux zestes d'orange</p>
@@ -58,9 +61,9 @@
                 <p>25€</p>
                 <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Velouté de légumes d'antan</h2>
                     <p>Carotte, panais, topinambour</p>
@@ -69,9 +72,9 @@
                 <p>35€</p>
                 <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Soupe à l'oignon</h2>
                     <p>Revisitée</p>
@@ -80,17 +83,17 @@
                 <p>20€</p>
                 <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            </ul>
+        </div>
 
         <!--PLATS-->
 
-            <ul class="menu--items">
+            <div class="menu--items">
 
             <h4>Plats</h4>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                         <h2>Coquilles Saint-Jacques</h2>
                         <p>Accompagnées d'une purée de panais</p>
@@ -99,9 +102,9 @@
                     <p>40€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Magret de canard</h2>
                     <p>Et parmentier de pommes de terre</p>
@@ -110,9 +113,9 @@
                     <p>35€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Pigeonneau d’Ille-et-Vilaine</h2>
                     <p>Sur son lit de gnocchis aux légumes</p>
@@ -121,17 +124,17 @@
                     <p>44€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-        </ul>
+        </div>
 
         <!--DESSERTS-->
 
-            <ul class="menu--items">
+            <div class="menu--items">
 
             <h4>Desserts</h4>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Pétales de violettes glacés</h2>
                     <p>Et purée de noisettes</p>
@@ -140,9 +143,9 @@
                     <p>18€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Fondant au chocolat</h2>
                     <p>Revisité</p>
@@ -151,9 +154,9 @@
                     <p>22€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            <li class="card--menu">
+            <article class="card--menu">
                 <div class="card-description--menu">
                     <h2>Millefeuille croustillant</h2>
                     <p>Myrtilles et pâte d’amande</p>
@@ -162,25 +165,27 @@
                     <p>23€</p>
                     <div class="add-to-cart"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
-            </li>
+            </article>
 
-            </ul>
+        </div>
 
         </div>
     </section>
 
 <section class="section">
-        <button class="btn btn--default btn--order">Commander</button>
+        <button class="btn--default btn--order">Commander</button>
 </section>
 
 </main>
 
+<!--FOOTER-->
+
 <footer class="footer">
-    <img src="./images/logo/ohmyfood.png" alt="Logo Oh my food!">
-    <div class="footer__item"><i class="icon__footer fa-solid fa-utensils"></i> <p>Proposer un restaurant</p></div>
-    <div class="footer__item"><i class="icon__footer fa-solid fa-handshake-angle"></i> <p>Devenir partenaire</p></div>
-    <p>Mentions légales</p>
-    <p>Contact</p>
+    <a href="./index.html"><img src="./images/logo/ohmyfood.png" alt="Logo Oh my food!"></a>
+    <div class="footer__item"><i class="icon__footer fa-solid fa-utensils"></i> <a href="#"><p>Proposer un restaurant</p></a></div>
+    <div class="footer__item"><i class="icon__footer fa-solid fa-handshake-angle"></i> <a href="#"><p>Devenir partenaire</p></a></div>
+    <p><a href="#">Mentions légales</a></p>
+    <p><a href="mailto:#">Contact</a></p>
 </footer>
     
 </body>

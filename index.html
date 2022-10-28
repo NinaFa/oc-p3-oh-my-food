@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food! - Accueil</title>
     <link rel="stylesheet" type="text/css" href="./normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;900&family=Shrikhand&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./main-prefixed.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;900&family=Shrikhand&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/prefixed/main.css">
 </head>
 
 <body>
@@ -16,11 +16,11 @@
     <!--Loading spinner-->
 
     <div class="preloader">
-    <div class="loading-spinner">
-        <i class="fa-solid fa-heart"></i>
-        <span class="spinner"></span>
-        <span class="spinner"></span>
-    </div>
+        <div class="loading-spinner">
+            <i class="fa-solid fa-heart"></i>
+            <span class="spinner"></span>
+            <span class="spinner"></span>
+        </div>
     </div>
 
     <!--HEADER-->
@@ -29,53 +29,63 @@
         <a href="./index.html"><img id="logo" class="header__logo" src="./images/logo/ohmyfood.png" alt="Oh my food!"></a>
     </header>
 
+    <!--MAIN-->
     <main>
 
     <!--FILTRES-->
     <section class="section--bg-dark">
-        <div class="section__container section__container--loc">
-        <i class="icon__filter fa-sharp fa-solid fa-location-dot"></i><input type="text" placeholder="Paris, Belleville">
+
+        <div class="section__container--loc">
+            <i class="icon__filter fa-sharp fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Paris, Belleville">
         </div>
+
     </section>
 
+    <!--SECTION INTRO-->
     <section class="section">
+
         <h1>Réservez le menu qui vous convient</h1>
         <p class="light">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="btn btn--default">Explorer nos restaurants</button>
+        <form action="#restaurants">
+            <button class="btn--default">Explorer nos restaurants</button>
+        </form>
+
     </section>
 
     <!--FONCTIONNEMENT-->
     <section class="section section--bg-alt">
 
         <div class="section__container--fonct">
-        <h1>Fonctionnement</h1>
+            <h1>Fonctionnement</h1>
 
-        <ul class="list-fonct">
-        
-        <li class="list-fonct-item">
-            <span><p>1</p></span>
-            <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
-            <h3>Choisissez un restaurant</h3>
-        </li>
+            <ul class="list-fonct">
+            
+                <li class="list-fonct-item">
+                    <div><p>1</p></div>
+                    <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+                    <h3>Choisissez un restaurant</h3>
+                </li>
 
-        <li class="list-fonct-item">
-            <span><p>2</p></span>
-            <i class="fa-solid fa-list-ul"></i>
-            <h3>Composez votre menu</h3>
-        </li>
+                <li class="list-fonct-item">
+                    <div><p>2</p></div>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <h3>Composez votre menu</h3>
+                </li>
 
-        <li class="list-fonct-item">
-            <span><p>3</p></span>
-            <i class="fa-sharp fa-solid fa-store"></i>
-            <h3>Dégustez au restaurant</h3>
-        </li>
+                <li class="list-fonct-item">
+                    <div><p>3</p></div>
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                    <h3>Dégustez au restaurant</h3>
+                </li>
 
-        </ul>
+            </ul>
+        </div>
 
     </section>
 
     <!--RESTAURANTS-->
-    <section class="section">
+    <section class="section" id="restaurants">
         
         <div class="section__container--col">
             <h1>Restaurants</h1>
@@ -87,7 +97,10 @@
                         <h2>La palette du goût</h2>
                         <p>Ménimontant</p>
                     </div>
-                    <div class="card-description__fav"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-description__fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
                 <div class="card-label">
                     <p class="card-label__text">Nouveau</p>
                 </div>
@@ -100,7 +113,10 @@
                         <h2>La note enchantée</h2>
                         <p>Charonne</p>
                     </div>
-                    <div class="card-description__fav"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-description__fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
                 <div class="card-label">
                     <p class="card-label__text">Nouveau</p>
                 </div>
@@ -113,7 +129,13 @@
                         <h2>À la française</h2>
                         <p>Cité rouge</p>
                     </div>
-                    <div class="card-description__fav"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-description__fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card-label">
+                    <p class="card-label__text">Nouveau</p>
+                </div>
             </a></article>
 
             <article class="card"><a href="./le-delice-des-sens.html">
@@ -123,7 +145,13 @@
                         <h2>Le délice des sens</h2>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <div class="card-description__fav"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-description__fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card-label">
+                    <p class="card-label__text">Nouveau</p>
+                </div>
             </a></article>
 
         </div>
@@ -131,12 +159,14 @@
 
 </main>
 
+<!--FOOTER-->
+
 <footer class="footer">
-    <img src="./images/logo/ohmyfood.png" alt="Logo Oh my food!">
-    <div class="footer__item"><i class="icon__footer fa-solid fa-utensils"></i> <p>Proposer un restaurant</p></div>
-    <div class="footer__item"><i class="icon__footer fa-solid fa-handshake-angle"></i> <p>Devenir partenaire</p></div>
-    <p>Mentions légales</p>
-    <p>Contact</p>
+    <a href="./index.html"><img src="./images/logo/ohmyfood.png" alt="Logo Oh my food!"></a>
+    <div class="footer__item"><i class="icon__footer fa-solid fa-utensils"></i> <a href="#"><p>Proposer un restaurant</p></a></div>
+    <div class="footer__item"><i class="icon__footer fa-solid fa-handshake-angle"></i> <a href="#"><p>Devenir partenaire</p></a></div>
+    <p><a href="#">Mentions légales</a></p>
+    <p><a href="mailto:#">Contact</a></p>
 </footer>
     
 </body>
