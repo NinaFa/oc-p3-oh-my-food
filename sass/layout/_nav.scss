@@ -27,17 +27,12 @@
     background-color: map-get($palette-bg, bg-dark);
     color: $text-alt;
     padding: 1rem;
-    @include tablet-desktop {
+    @include tablet {
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         padding: 2rem;
-    }
-    > a {
-        @include mobile {
-            padding: 0.5rem 0 1.5rem 0;
-        }
     }
     & img {
         width: 6rem;
@@ -45,7 +40,7 @@
     }
     > * {
         padding-bottom: 0.5rem;
-        @include tablet-desktop {
+        @include tablet {
             padding-bottom: 0;
         }
     }

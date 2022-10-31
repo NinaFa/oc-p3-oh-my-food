@@ -188,18 +188,13 @@
   color: white;
   padding: 1rem;
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer > a {
-    padding: 0.5rem 0 1.5rem 0;
   }
 }
 .footer img {
@@ -209,7 +204,7 @@
 .footer > * {
   padding-bottom: 0.5rem;
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .footer > * {
     padding-bottom: 0;
   }
@@ -254,7 +249,7 @@
   align-content: center;
   width: 95%;
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .section__container--fonct {
     flex-flow: row wrap;
     justify-content: center;
@@ -269,7 +264,7 @@
   flex-flow: column;
   width: 95%;
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .section__container--col {
     flex-flow: row wrap;
     justify-content: center;
@@ -306,13 +301,13 @@
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) {
   .card {
     width: 42%;
     margin: 1rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .card {
     width: 35%;
     margin: 2rem;
@@ -424,14 +419,14 @@
   box-shadow: 1px 2px 10px rgb(180, 180, 180);
   font-weight: 400;
 }
-@media screen and (min-width: 992px) {
-  .list-fonct-item {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) {
   .list-fonct-item {
     width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .list-fonct-item {
+    width: 30%;
   }
 }
 .list-fonct-item > div {
@@ -460,17 +455,19 @@
   color: #9356DC;
 }
 
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
+  .menu--items {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
   .menu--items {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin: 1rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 991px) {
-  .menu--items {
-    width: 60%;
     margin: 1rem;
   }
 }
@@ -512,7 +509,7 @@
 .card--menu:nth-child(5) {
   animation-delay: 3.45s;
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .card--menu {
     margin: 10px;
   }
@@ -580,7 +577,7 @@ h1 {
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h1 {
     text-align: center;
   }
@@ -590,18 +587,13 @@ h2 {
   font-size: 14px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 14px;
-  }
-}
 
 h3 {
-  font-size: 13px;
+  font-size: 14px;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -627,22 +619,22 @@ h4::after {
 
 h5 {
   font-family: "Shrikhand";
-  font-size: 24px;
+  font-size: 26px;
   margin-right: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   h5 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 200;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -656,19 +648,20 @@ p {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  width: 95%;
+  padding: 0 1rem;
 }
 .menu__heading i {
-  font-size: 20px;
+  font-size: 22px;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   .menu__heading i {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   .menu__heading {
-    width: 95%;
-    padding: 0 1rem;
+    justify-content: center;
   }
 }
 

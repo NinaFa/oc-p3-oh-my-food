@@ -27,7 +27,7 @@
             flex-flow: column wrap;
             align-content: center;
             width: 95%;
-            @include tablet-desktop {
+            @include tablet {
                 flex-flow: row wrap;
                 justify-content: center;
                 gap: 1.5rem;
@@ -40,7 +40,7 @@
             display: flex;
             flex-flow: column;
             width: 95%;
-            @include tablet-desktop {
+            @include tablet {
                 flex-flow: row wrap;
                 justify-content: center;
                 & h1 {

@@ -2,9 +2,7 @@
 // Breakpoints
 
 $breakpoints : (
-    mobile-max: 768px,
     tablet-min: 769px,
-    tablet-max: 991px,
     desktop-min: 992px,
 );
 
@@ -12,7 +10,6 @@ $breakpoints : (
 
 $primary: #9356DC;
 $secondary: #FF79DA;
-$secondary-2 : #FF0000;
 $tertiary: #99E2D0;
 
 $bg-color-default: #fbfbfb;
