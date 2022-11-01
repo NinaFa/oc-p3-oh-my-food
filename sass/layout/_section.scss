@@ -15,12 +15,14 @@
     }
     &__container {
         &--loc {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
             padding: 1rem;
             background: darken($bg-color-default,  7%);
+            > form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
         }
         &--fonct {
             display: flex;
